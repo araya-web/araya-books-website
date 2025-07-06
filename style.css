@@ -1,0 +1,288 @@
+ /* General Resets and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes layout easier to control */
+}
+
+/* Base Body Styles - Parchment Background and Traditional Feel */
+body {
+    font-family: 'Noto Serif Ethiopic', serif; /* Ethiopian font, will need to link from Google Fonts */
+    line-height: 1.6;
+    color: #3f2f25; /* Dark brown/earthy text color */
+    background-color: #f7e6c0; /* Light parchment/cream color */
+    background-image: url('parchment_texture.jpg'); /* Placeholder: Replace with your parchment image */
+    background-repeat: repeat; /* Repeat the texture */
+    background-size: auto; /* Or cover, depending on your image */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for Centering Content */
+.container {
+    max-width: 960px; /* Max width of your content */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent white for content areas */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space between containers */
+}
+
+/* Header Styling */
+header {
+    background-color: #5a4b3d; /* Darker earthy tone */
+    color: #f7e6c0; /* Light text on dark background */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 3px solid #7d6b5e; /* Decorative border */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Abyssinica SIL', serif; /* Another traditional font option */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f7e6c0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #7d6b5e; /* Slightly lighter on hover */
+}
+
+/* Language Switcher Specific Styling */
+.language-switcher {
+    border: 1px solid #f7e6c0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px; /* Space from other menu items */
+}
+.language-switcher a:hover {
+    background-color: transparent; /* Don't change background for language switch */
+    color: #f7e6c0;
+}
+
+
+/* Main Content Area */
+main {
+    flex: 1; /* Allows main content to grow and push footer down */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5a4b3d; /* Dark earthy heading color */
+    font-family: 'Abyssinica SIL', serif;
+}
+
+section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: rgba(90, 75, 61, 0.7); /* Slightly transparent darker background */
+    color: #f7e6c0;
+    padding: 80px 20px;
+    border-bottom: 3px solid #7d6b5e;
+}
+
+.hero-section h2 {
+    color: #f7e6c0;
+    font-size: 3em;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #7d6b5e; /* Medium earthy button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a08c79; /* Lighter on hover */
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.btn-buy {
+    background-color: #b35a4d; /* A warmer, slightly reddish tone for buy buttons */
+    margin-left: 10px;
+}
+
+.btn-buy:hover {
+    background-color: #d66f60;
+}
+
+/* Book List Section */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between book items */
+    margin-top: 30px;
+}
+
+.book-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #7d6b5e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px; /* Fixed width for each book item */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    color: #5a4b3d;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+.book-item p {
+    font-size: 0.95em;
+    color: #3f2f25;
+    margin-bottom: 15px;
+}
+
+/* Contact Form Styling */
+.contact-section form {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border: 1px solid #7d6b5e;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3f2f25;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7d6b5e;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Noto Serif Ethiopic', serif;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-section .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #5a4b3d;
+    color: #f7e6c0;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto; /* Push footer to the bottom */
+    border-top: 3px solid #7d6b5e;
+    font-size: 0.9em;
+}
+
+/* Basic Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section h2 {
+        font-size: 2em;
+    }
+
+    .book-item {
+        width: 100%; /* Books stack vertically */
+    }
+}
